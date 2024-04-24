@@ -217,17 +217,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &935673145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7817798471059227135, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-  m_PrefabInstance: {fileID: 994236410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2eb0ffee53f8c4ebd367b7f42e3c62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +317,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 530933651808130340, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
+      propertyPath: _rb
+      value: 
+      objectReference: {fileID: 1209410802}
+    - target: {fileID: 530933651808130340, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
+      propertyPath: moveComponent
+      value: 
+      objectReference: {fileID: 1209410796}
     - target: {fileID: 1564730622046410021, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.3
@@ -368,14 +365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2970680655422867591, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
+    - target: {fileID: 3874576737439649922, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
+      propertyPath: m_Constraints
+      value: 84
       objectReference: {fileID: 0}
-    - target: {fileID: 2992939744021150076, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-      propertyPath: _spinTrigger
-      value: 
-      objectReference: {fileID: 935673145}
     - target: {fileID: 6341554486294221491, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
       propertyPath: m_Name
       value: ZombieTelepotring
@@ -384,18 +377,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7935578027049290347, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-      propertyPath: _maxLenghtTeleport
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935578027049290347, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-      propertyPath: _minLenghtTeleport
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935578027049290347, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-      propertyPath: _teleportComponent
-      value: 
-      objectReference: {fileID: 1878445367}
     - target: {fileID: 8940084062081650966, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
       propertyPath: _enemyTransform
       value: 
@@ -494,10 +475,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6372339717100152253, guid: 93dcad34b0423324b913b1822a3d4b90, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8940084062081650966, guid: 93dcad34b0423324b913b1822a3d4b90, type: 3}
       propertyPath: _enemyTransform
       value: 
@@ -555,22 +532,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2152194982102797939, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2152194982102797939, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3874576737439649922, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3874576737439649922, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 6341554486294221491, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
       propertyPath: m_Name
       value: ZombieJumping
@@ -578,46 +539,6 @@ PrefabInstance:
     - target: {fileID: 6341554486294221491, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023473973245555788, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: _powerJump
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].message
-      value: jump_event
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1190573619}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Components.JumpComponent, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7820106721229642940, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-      propertyPath: events.Array.data[0].action.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8940084062081650966, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
       propertyPath: _enemyTransform
@@ -628,17 +549,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
---- !u!114 &1190573619 stripped
+--- !u!114 &1209410796 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7023473973245555788, guid: 8c5dda77dae8b884dafbac092cf20a07, type: 3}
-  m_PrefabInstance: {fileID: 1190573617}
+  m_CorrespondingSourceObject: {fileID: 7935578027049290347, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
+  m_PrefabInstance: {fileID: 994236410}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97b4c2f6d97a30e42ae8bdecee578273, type: 3}
+  m_Script: {fileID: 11500000, guid: 093752df5b2f3ca4996582b84b83d057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1209410802 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3874576737439649922, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
+  m_PrefabInstance: {fileID: 994236410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1261886860
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,17 +761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterGameObject: {fileID: 6371571377298002807}
---- !u!114 &1878445367 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2992939744021150076, guid: 3afbb308f004ad243a99385d422a0139, type: 3}
-  m_PrefabInstance: {fileID: 994236410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81974b2a35b9a8c4d8f3575c49998ce3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2057663080
 GameObject:
   m_ObjectHideFlags: 0

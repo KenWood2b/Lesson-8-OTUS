@@ -783,7 +783,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44a866b3b4c4c02a396fe6dce15347c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - message: jump_event
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7023473973245555788}
+          m_TargetAssemblyTypeName: Components.JumpComponent, Assembly-CSharp
+          m_MethodName: Jump
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2226293674973985582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,7 +1471,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &530933651808130340
 MonoBehaviour:
@@ -1473,6 +1489,9 @@ MonoBehaviour:
   _zombieController: {fileID: 8940084062081650966}
   aimComponent: {fileID: 802682421897227549}
   rotateAction: {fileID: 8678938684337723478}
+  _zombiCollider: {fileID: 4135896952737180509}
+  moveComponent: {fileID: 4304584068946733495}
+  _rb: {fileID: 3874576737439649922}
 --- !u!114 &8940084062081650966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,7 +1864,7 @@ Transform:
   m_GameObject: {fileID: 7720351563467582070}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -6.26, y: 0, z: 0.36000013}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

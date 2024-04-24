@@ -1443,6 +1443,9 @@ MonoBehaviour:
   _zombieController: {fileID: 8940084062081650966}
   aimComponent: {fileID: 802682421897227549}
   rotateAction: {fileID: 8678938684337723478}
+  _zombiCollider: {fileID: 2665556676711997251}
+  moveComponent: {fileID: 5737501362433023112}
+  _rb: {fileID: 3874576737439649922}
 --- !u!114 &8940084062081650966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,7 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ace94e38ccc34984be52fc950f029491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
 --- !u!114 &8678938684337723478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,7 +1524,7 @@ GameObject:
   - component: {fileID: 145026745567539879}
   - component: {fileID: 2665556676711997251}
   - component: {fileID: 2839078121822703107}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: <Collider>
   m_TagString: Untagged
   m_Icon: {fileID: 0}

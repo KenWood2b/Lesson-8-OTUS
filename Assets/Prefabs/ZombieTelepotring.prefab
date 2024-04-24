@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 929049168822405762}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 11.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1480,7 +1480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1564730622046410021
 Transform:
   m_ObjectHideFlags: 0
@@ -1524,7 +1524,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &530933651808130340
 MonoBehaviour:
@@ -1542,6 +1542,7 @@ MonoBehaviour:
   _zombieController: {fileID: 8940084062081650966}
   aimComponent: {fileID: 802682421897227549}
   rotateAction: {fileID: 8678938684337723478}
+  _zombiCollider: {fileID: 4503029816342558869}
 --- !u!114 &8940084062081650966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,11 +1610,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: 0, z: 0}
-  _maxLenghtTeleport: 2
-  _minLenghtTeleport: 6
+  _maxLenghtTeleport: 10
+  _minLenghtTeleport: 4
   _minDelayTeleport: 2
   _addToMinDelayTeleport: 1
-  _teleportComponent: {fileID: 0}
+  _teleportComponent: {fileID: 2992939744021150076}
 --- !u!114 &2992939744021150076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1630,7 +1631,7 @@ MonoBehaviour:
   _burrowSpeed: 1
   _burrowDepth: 2
   _speedMoveUnderground: 1
-  _spinTrigger: {fileID: 0}
+  _spinTrigger: {fileID: 7817798471059227135}
 --- !u!1 &6415454721477173021
 GameObject:
   m_ObjectHideFlags: 0

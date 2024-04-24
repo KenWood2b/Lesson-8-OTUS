@@ -38,6 +38,7 @@ namespace Game.Engine
              * Действия в ZombieController должны вызываться синхроно с Zombie
              * В случае смерти цели зомби не должен двигаться, отсутствие цели не должно вызывать ошибку
              */
+          
             if(!_enemyTransform)
             {
                 return;
@@ -49,7 +50,7 @@ namespace Game.Engine
             }
             Vector3 directionToEnemy = GetDirectionToEnemy();
             float distance = directionToEnemy.magnitude;
-            //Debug.Log($"distance[{distance}] attak [{distance < _attackDistance}]");
+
             if (distance < _attackDistance)
             {
                 AttackEnemy(directionToEnemy);
